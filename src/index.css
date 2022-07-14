@@ -1,0 +1,102 @@
+body {
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-color: #ff74e1;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  margin:auto;
+  padding:0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+	max-width: 1000px;
+    margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	min-height: 100vh;
+}
+
+.notes-list {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(270px, 1px)
+	);
+}
+
+.note.new {
+	background-color: #ffd5b7;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	background-color: #ffd5b7;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.save {
+	background-color: #E283C1;
+  color: aliceblue;
+	border: none;
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+
+.save:hover {
+	background-color: #83E2A4;
+	cursor: pointer;
+}
+
+.note {
+	background-color: #AFD5F0;
+	border-radius: 20px;
+	padding: 1rem;
+	min-height: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+}
+
+.note-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+
+.delete-icon:hover{
+	color: red;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: #fdfd96;
+	padding: 8px;
+	border-radius: 20px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: #fdfd96;
+	width: 100%;
+	box-shadow: 10px 10px 30px #fdfd96;
+}
+
+.search input:focus {
+	outline: none;
+}
